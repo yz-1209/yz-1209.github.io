@@ -11,6 +11,7 @@ module.exports = {
       twitter: `yz_1209`,
       github: `yz-1209`,
     },
+    disqusShortName: "yuezhang-blog",
   },
   plugins: [
     `gatsby-plugin-image`,

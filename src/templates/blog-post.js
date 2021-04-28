@@ -10,8 +10,10 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: post.frontmatter.title },
+    shortname: data.site.siteMetadata.disqusShortName,  
+    config: { 
+      identifier: post.frontmatter.title,
+    },
   }
 
   return (
@@ -77,6 +79,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        disqusShortName
       }
     }
     markdownRemark(id: { eq: $id }) {
