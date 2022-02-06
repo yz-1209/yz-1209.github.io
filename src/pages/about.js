@@ -10,7 +10,7 @@ export default function About({ data, location }) {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <Seo title="about"/>
+            <Seo title="About"/>
             <Bio/>
         </Layout>
     )
