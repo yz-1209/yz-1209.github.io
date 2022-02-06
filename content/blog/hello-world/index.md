@@ -4,8 +4,6 @@ date: "2021-04-28"
 description: "Hello World"
 ---
 
-# Hello world!
-
 这是我的第一篇博客！
 
 ```python

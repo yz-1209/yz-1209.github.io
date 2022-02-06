@@ -46,17 +46,18 @@ const Bio = () => {
       {author?.name && (
         <div>
           <p>
-            This is <strong>{author.name}</strong>. {author?.summary || null}{` `}
+            Coca-Cola | Switch | Golang | Python | Goland + Vim
           </p>
           <p>
-            You can follow me on &nbsp; 
+            You can find me on &nbsp; 
             <a href={`https://twitter.com/${social?.twitter || ``}`}>
               Twitter
             </a>
             &nbsp; and &nbsp;
             <a href={`https://github.com/${social?.github || ``}`}>
-              Github.
+              Github
             </a>
+            .
           </p>
         </div>
       )}
